@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Choose a Flower</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f6f2eb;
+  font-family: serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+/* หัวข้อ */
+.title {
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+/* กลุ่มดอกไม้ */
+.flowers {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 28px;
+  justify-content: center;
+}
+
+/* การ์ดดอกไม้ */
+.flower {
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.flower:hover {
+  transform: translateY(-6px);
+  opacity: 0.8;
+}
+
+/* รูป */
+.flower img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%) contrast(90%) brightness(110%);
+}
+
+/* ชื่อ */
+.name {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="title">เลือกดอกไม้หนึ่งดอก</div>
+  <div class="subtitle">（择一花）</div>
+
+  <div class="flowers">
+
+    <a class="flower" href="flower.html?f=plum">
+      <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b" alt="Plum">
+      <div class="name">PLUM BLOSSOM</div>
+    </a>
+
+    <a class="flower" href="flower.html?f=orchid">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Orchid">
+      <div class="name">ORCHID</div>
+    </a>
+
+    <a class="flower" href="flower.html?f=bamboo">
+      <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9" alt="Bamboo">
+      <div class="name">BAMBOO</div>
+    </a>
+
+    <a class="flower" href="flower.html?f=chrysanthemum">
+      <img src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f" alt="Chrysanthemum">
+      <div class="name">CHRYSANTHEMUM</div>
+    </a>
+
+    <a class="flower" href="flower.html?f=lotus">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Lotus">
+      <div class="name">LOTUS</div>
+    </a>
+
+    <a class="flower" href="flower.html?f=peony">
+      <img src="https://images.unsplash.com/photo-1498842812179-c81beecf902c" alt="Peony">
+      <div class="name">PEONY</div>
+    </a>
+
+    <a class="flower" href="flower.html?f=camellia">
+      <img src="https://images.unsplash.com/photo-1610397648930-477b8c7f0f7c" alt="Camellia">
+      <div class="name">CAMELLIA</div>
+    </a>
+
+  </div>
+</div>
+
+</body>
+</html>
